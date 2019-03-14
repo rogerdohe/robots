@@ -1,3 +1,4 @@
+//Comentario para git commit
 //var async = require('async');
 require('chromedriver');
 const {Builder, By, until} = require('selenium-webdriver');
@@ -36,7 +37,7 @@ function news(){
 		driver.sleep(1000);
 		driver.findElement(By.xpath('//*[@id="universal-header-bottom"]/div[7]/ul/li[3]/a')).click();
 		console.log('seccion metropoli|||');
-		
+
 		//#zone-content-wrapper
 		driver.wait(until.elementLocated(By.className('nombre-seccion'),15000)).then( function(){
 			driver.sleep(10000);
